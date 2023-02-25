@@ -110,8 +110,8 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/exalm/elastic.git",
-                    "tag" : "0.1.0",
-                    "commit" : "61838de2d9b6de5fb246284d1cbbced215149874"
+                    "tag" : "0.1.2",
+                    "commit" : "970a1701ebfc033109dd019f1f0d4005c1a8f673"
                 },
                 {
                     "type" : "patch",
