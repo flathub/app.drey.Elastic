@@ -33,10 +33,14 @@
             ],
             "sources" : [
                 {
-                    "type" : "git",
-                    "url" : "https://gitlab.gnome.org/GNOME/template-glib.git",
-                    "tag" : "3.36.0",
-                    "commit" : "a79f0b3e8c09eed250f5fc0ed7b806daf6387c03"
+                    "type" : "archive",
+                    "url" : "https://download.gnome.org/sources/template-glib/3.36/template-glib-3.36.1.tar.xz",
+                    "sha256" : "3b167a17385ad745afbe20fadf8106c66d30c5bd746d5aa1d9bdb7e803f6a503",
+                    "x-checker-data" : {
+                        "type" : "gnome",
+                        "name" : "template-glib",
+                        "stable-only" : true
+                    }
                 }
             ]
         },
@@ -45,10 +49,15 @@
             "buildsystem" : "meson",
             "sources" : [
                 {
-                    "type" : "git",
-                    "url" : "https://gitlab.gnome.org/exalm/elastic.git",
-                    "tag" : "0.1.3",
-                    "commit" : "2f2eac753060c53cff576f316e0c591bf19b5713"
+                    "type" : "archive",
+                    "url" : "https://gitlab.gnome.org/World/elastic/-/archive/0.1.3/elastic-0.1.3.tar.bz2",
+                    "sha512" : "e136cc52582d8f56bcc4af602e5f3d1788281a0d239b0986f99e53f13ce6a3ed0b9e09a6872b6bd98521b98a58cd25ceaa456c317ceceaa9f7d950438e5470df",
+                    "x-checker-data" : {
+                        "type" : "json",
+                        "url" : "https://gitlab.gnome.org/api/v4/projects/World%2Felastic/releases/permalink/latest",
+                        "version-query" : ".name",
+                        "url-query" : ".assets.sources[] | select(.format == \"tar.bz2\" and .url) | .url"
+                    }
                 },
                 {
                     "type" : "patch",
