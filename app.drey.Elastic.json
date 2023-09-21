@@ -1,7 +1,7 @@
 {
     "app-id" : "app.drey.Elastic",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "44",
+    "runtime-version" : "45",
     "sdk" : "org.gnome.Sdk",
     "command" : "app.drey.Elastic",
     "finish-args" : [
@@ -58,10 +58,6 @@
                         "version-query" : ".name",
                         "url-query" : ".assets.sources[] | select(.format == \"tar.bz2\" and .url) | .url"
                     }
-                },
-                {
-                    "type" : "patch",
-                    "path" : "0001-graph-view-Don-t-use-gtk_widget_get_color.patch"
                 }
             ]
         }
