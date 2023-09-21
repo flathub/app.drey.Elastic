@@ -1,8 +1,11 @@
 {
     "app-id" : "app.drey.Elastic",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "44",
+    "runtime-version" : "45",
     "sdk" : "org.gnome.Sdk",
+    "sdk-extensions" : [
+        "org.freedesktop.Sdk.Extension.vala"
+    ],
     "command" : "app.drey.Elastic",
     "finish-args" : [
         "--share=ipc",
@@ -10,6 +13,10 @@
         "--socket=wayland",
         "--device=dri"
     ],
+    "build-options" : {
+        "append-path" : "/usr/lib/sdk/vala/bin",
+        "prepend-ld-library-path" : "/usr/lib/sdk/vala/lib"
+    },
     "cleanup" : [
         "/include",
         "/lib/pkgconfig",
@@ -35,8 +42,8 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/GNOME/template-glib.git",
-                    "tag" : "3.36.0",
-                    "commit" : "a79f0b3e8c09eed250f5fc0ed7b806daf6387c03"
+                    "tag" : "3.36.1",
+                    "commit" : "f7c21273599381494bc8d9b0633b93e14586471a"
                 }
             ]
         },
@@ -46,13 +53,9 @@
             "sources" : [
                 {
                     "type" : "git",
-                    "url" : "https://gitlab.gnome.org/exalm/elastic.git",
-                    "tag" : "0.1.3",
-                    "commit" : "2f2eac753060c53cff576f316e0c591bf19b5713"
-                },
-                {
-                    "type" : "patch",
-                    "path" : "0001-graph-view-Don-t-use-gtk_widget_get_color.patch"
+                    "url" : "https://gitlab.gnome.org/World/elastic.git",
+                    "tag" : "0.1.4",
+                    "commit" : "0b8c4823dbe7fcbf8c3c77a1e23e9313fc77745b"
                 }
             ]
         }
