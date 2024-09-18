@@ -1,7 +1,7 @@
 {
     "app-id" : "app.drey.Elastic",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "46",
+    "runtime-version" : "47",
     "sdk" : "org.gnome.Sdk",
     "sdk-extensions" : [
         "org.freedesktop.Sdk.Extension.vala"
@@ -54,8 +54,8 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/World/elastic.git",
-                    "tag" : "0.1.5",
-                    "commit" : "9f0ef575b79dbc6e9c66a8b7e0c5340285893d0c"
+                    "tag" : "0.1.6",
+                    "commit" : "42a948d491676a7c23a776879922228e03944533"
                 }
             ]
         }
