@@ -34,7 +34,6 @@
             "name" : "template-glib",
             "buildsystem" : "meson",
             "config-opts" : [
-                "--buildtype=debugoptimized",
                 "-Dintrospection=enabled",
                 "-Dvapi=true"
             ],
