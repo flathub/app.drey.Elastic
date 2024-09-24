@@ -35,7 +35,12 @@
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/GNOME/template-glib.git",
                     "tag" : "3.36.2",
-                    "commit" : "51ab89b83f47e6435df454699bcde6816372b9d3"
+                    "commit" : "51ab89b83f47e6435df454699bcde6816372b9d3",
+                    "x-checker-data" : {
+                        "type" : "gnome",
+                        "name" : "template-glib",
+                        "stable-only" : true
+                    }
                 }
             ]
         },
@@ -47,7 +52,11 @@
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/World/elastic.git",
                     "tag" : "0.1.6",
-                    "commit" : "42a948d491676a7c23a776879922228e03944533"
+                    "commit" : "42a948d491676a7c23a776879922228e03944533",
+                    "x-checker-data" : {
+                        "type" : "git",
+                        "name" : "^([\\d.])$"
+                    }
                 }
             ]
         }
