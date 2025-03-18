@@ -1,16 +1,16 @@
 {
-    "app-id" : "app.drey.Elastic",
-    "runtime" : "org.gnome.Platform",
-    "runtime-version" : "47",
-    "sdk" : "org.gnome.Sdk",
-    "command" : "app.drey.Elastic",
-    "finish-args" : [
+    "app-id": "app.drey.Elastic",
+    "runtime": "org.gnome.Platform",
+    "runtime-version": "48",
+    "sdk": "org.gnome.Sdk",
+    "command": "app.drey.Elastic",
+    "finish-args": [
         "--share=ipc",
         "--socket=fallback-x11",
         "--socket=wayland",
         "--device=dri"
     ],
-    "cleanup" : [
+    "cleanup": [
         "/include",
         "/lib/pkgconfig",
         "/man",
@@ -22,40 +22,40 @@
         "*.la",
         "*.a"
     ],
-    "modules" : [
+    "modules": [
         {
-            "name" : "template-glib",
-            "buildsystem" : "meson",
-            "config-opts" : [
+            "name": "template-glib",
+            "buildsystem": "meson",
+            "config-opts": [
                 "-Dintrospection=enabled",
                 "-Dvapi=true"
             ],
-            "sources" : [
+            "sources": [
                 {
-                    "type" : "git",
-                    "url" : "https://gitlab.gnome.org/GNOME/template-glib.git",
-                    "tag" : "3.36.2",
-                    "commit" : "51ab89b83f47e6435df454699bcde6816372b9d3",
-                    "x-checker-data" : {
-                        "type" : "gnome",
-                        "name" : "template-glib",
-                        "stable-only" : true
+                    "type": "git",
+                    "url": "https://gitlab.gnome.org/GNOME/template-glib.git",
+                    "tag": "3.36.3",
+                    "commit": "a13d1ada1ac01794a06cff99989bedbb4715e6c8",
+                    "x-checker-data": {
+                        "type": "gnome",
+                        "name": "template-glib",
+                        "stable-only": true
                     }
                 }
             ]
         },
         {
-            "name" : "elastic",
-            "buildsystem" : "meson",
-            "sources" : [
+            "name": "elastic",
+            "buildsystem": "meson",
+            "sources": [
                 {
-                    "type" : "git",
-                    "url" : "https://gitlab.gnome.org/World/elastic.git",
-                    "tag" : "0.1.6",
-                    "commit" : "42a948d491676a7c23a776879922228e03944533",
-                    "x-checker-data" : {
-                        "type" : "git",
-                        "name" : "^([\\d.])$"
+                    "type": "git",
+                    "url": "https://gitlab.gnome.org/World/elastic.git",
+                    "tag": "0.1.7",
+                    "commit": "422c40c8f4d601a4da458a055905b83e05bdaad2",
+                    "x-checker-data": {
+                        "type": "git",
+                        "name": "^([\\d.])$"
                     }
                 }
             ]
