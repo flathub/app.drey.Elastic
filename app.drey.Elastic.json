@@ -51,8 +51,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/World/elastic.git",
-                    "tag": "0.1.7",
-                    "commit": "422c40c8f4d601a4da458a055905b83e05bdaad2",
+                    "tag": "0.1.8",
+                    "commit": "06d7b475d73eec24c9a40b4c8cb17f92e56ef849",
                     "x-checker-data": {
                         "type": "git",
                         "name": "^([\\d.])$"
