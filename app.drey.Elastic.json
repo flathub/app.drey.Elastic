@@ -24,6 +24,18 @@
     ],
     "modules": [
         {
+            "name": "blueprint-compiler",
+            "buildsystem": "meson",
+            "cleanup": ["*"],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://gitlab.gnome.org/GNOME/blueprint-compiler",
+                    "tag": "v0.16.0"
+                }
+            ]
+        },
+        {
             "name": "template-glib",
             "buildsystem": "meson",
             "config-opts": [
@@ -51,8 +63,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/World/elastic.git",
-                    "tag": "0.1.8",
-                    "commit": "06d7b475d73eec24c9a40b4c8cb17f92e56ef849",
+                    "tag": "0.1.9",
+                    "commit": "cfe7e22ca95e339d753bf926a22ec62a421e9376",
                     "x-checker-data": {
                         "type": "git",
                         "name": "^([\\d.])$"
