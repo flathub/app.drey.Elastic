@@ -1,7 +1,7 @@
 {
     "app-id": "app.drey.Elastic",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "49",
+    "runtime-version": "50",
     "sdk": "org.gnome.Sdk",
     "command": "app.drey.Elastic",
     "finish-args": [
@@ -50,8 +50,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/World/elastic.git",
-                    "tag": "1.0.1",
-                    "commit": "fe2e4ba0f4df26276b40cfe0e05bbabef3e96bb2",
+                    "tag": "1.0.2",
+                    "commit": "0f7ed57ed4d6ef5b28b5e9815f34eab2ad71ef3b",
                     "x-checker-data": {
                         "type": "git",
                         "name": "^([\\d.])$"
